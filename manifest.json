@@ -1,0 +1,14 @@
+{
+  "name": "Internet filter",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "This Extension is intended to limit the viewing time of Facebook.",
+  "icons": {
+      "48": "icon128.jpg",
+      "128": "icon128.jpg"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.facebook.com/*"],
+    "js": ["script.js"]
+  }]
+}
